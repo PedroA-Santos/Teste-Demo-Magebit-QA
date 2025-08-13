@@ -9,11 +9,11 @@ describe("Teste de Cadastro e Login de Usuário", () => {
     cy.visit("https://magento2-demo.magebit.com/");
     cy.contains("Create an Account").should("be.visible").click();
 
-    cadastrarUsuario();
+    cadastrarUsuarioeLogar();
   });
 });
 
-function cadastrarUsuario() {
+function cadastrarUsuarioeLogar() {
   const nome = faker.person.firstName();
   const sobrenome = faker.person.lastName();
   const email = faker.internet.email();
